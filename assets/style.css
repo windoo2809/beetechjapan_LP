@@ -15,6 +15,10 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+.header ul a {
+    color: white;
+}
+
 .header .list-inline-item:not(:last-child) {
   margin-right: 2rem;
 }
@@ -136,8 +140,8 @@ body {
 }
 
 .our-team {
-  margin-top: 120px;
-  margin-bottom: 120px;
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 .our-team .title{
   display: flex;
@@ -283,8 +287,8 @@ body {
 
 /* contact us */
 .contact-us {
-  margin-top: 100px;
-  margin-bottom: 75px;
+  padding-top: 120px;
+  padding-bottom: 120px;
   background-color: #FFFFFF;
 }
 
@@ -365,7 +369,18 @@ body {
 }
 
 @media screen and (max-width: 992px) {
-
+  .feature-work {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .founder {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .our-team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .our-team .owl-carousel .owl-stage .owl-item .content h5 {
     font-size: 18px;
   }
@@ -392,6 +407,13 @@ body {
   .our-team .owl-carousel .card .card-body p {
     margin-bottom: 10px
   }
+  .our-location {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .our-location .content {
+    margin-top: 50px;
+  }
   .our-location .row p {
     font-size: 13px;
   }
@@ -407,8 +429,15 @@ body {
   .our-location .row .left-content img{
     height: 180px;
   }
+  .contact-us {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .contact-us .left p {
     padding-top: 0px;
+  }
+  .contact-us form button {
+    margin-top: 20px;
   }
   
 }
@@ -483,5 +512,16 @@ body {
 }
 
 @media (max-width: 480px) {
-
+  .feature-work .title h2 {
+    font-size: 34px;
+  }
+  .our-team .title h2 {
+    font-size: 34px;
+  }
+  .contact-us .row .title h2 {
+    font-size: 34px;
+  }
+  .contact-us .left p {
+    font-size: 12px;
+  }
 }
