@@ -29,12 +29,305 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+.header ul a {
+  color: white;
+}
+
 .header .text h1 {
   font-size: 56px;
 }
 
 .banner img {
-  height: 100vh;
+  min-height: 600px;
+}
+
+.about-us, .our-journey {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.about-us .title h2, .our-journey .title h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  color: #4D4D4D;
+}
+
+.about-us .title h1, .our-journey .title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #FF6E2E;
+  margin-top: 15px;
+}
+
+.about-us .title p {
+  font-family: 'Roboto', sans-serif;
+  margin-top: 20px;
+}
+
+.about-us img {
+  margin-top: 60px;
+}
+
+.our-journey .time-line{
+  margin-top: 1rem;
+}
+
+.who-were-are {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.who-were-are h1, .how-were-work .left h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #FF6E2E;
+}
+
+.who-were-are p, .how-were-work .left p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.who-were-are h2, .how-were-work .left h2 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #4D4D4D;
+  line-height: 40px;
+}
+
+.who-were-are .left, .how-were-work .left {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  height: 100%;
+}
+
+.how-were-work {
+  background-color: #F2F2F2;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.how-were-work .right h3 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.how-were-work .right p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 1.45rem;
+}
+
+.how-were-work .right img {
+  margin-left: 30px;
+}
+
+.how-were-work .vector {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.our-service {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.our-service .title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  color: #FF6E2E;
+}
+
+.our-service .title p {
+  font-family: 'Poppins', sans-serif;
+}
+
+.our-service .card-group {
+  margin-top: 80px;
+}
+
+.our-service .card-title {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
+  color: #FF6E2E;
+}
+
+.our-service .card-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+footer {
+  background-color: #07090D;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  font-family: 'Poppins', sans-serif;
+  color: #818A9C;
+}
+
+footer ul {
+  line-height: 45px;
+}
+
+footer ul label {
+  font-weight: 500;
+  color: white;
+}
+
+footer hr {
+  border-top: 2px solid #1B212C;
+  margin-bottom: 40px;
+}
+
+footer .social {
+  display: inline-flex;
+  justify-content: center;
+}
+
+footer .social a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border: 1px solid #1B212C;
+  font-size: 20px;
+  margin-left: 20px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header .text {
+      top: 5rem;
+  }
+  .who-were-are br, .how-were-work br {
+      display: none;
+  }
+  .how-were-work .right img {
+      margin-left: 0;
+  }
+
+  .our-service .card-title {
+      font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .about-us, .our-journey {
+      padding-top: 40px;
+      padding-bottom: 40px;
+  }
+  .who-were-are, .how-were-work, .our-service {
+      padding-top: 40px;
+      padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header .list-inline-item {
+      font-size: 18px;
+  }
+  .header .list-inline-item:not(:last-child) {
+      margin-right: 0.5rem;
+  }
+  .header .text h1 {
+      font-size: 46px;
+  }
+  .header .text br {
+      display: none;
+  }
+  .how-were-work .right p {
+      font-size: 14px;
+      margin-top: 0;
+  }
+  .how-were-work .right h3 {
+      font-size: 18px;
+  }
+  .who-were-are h1, .how-were-work .left h1 {
+      font-size: 42px;
+  }
+  .who-were-are h2, .how-were-work .left h2 {
+      font-size: 22px;
+  }
+  .who-were-are p, .how-were-work .left p {
+      font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+      max-width: 960px;
+  }
+  .how-were-work .right img {
+      height: 400px;
+  }
+  .how-were-work .right p {
+      margin-top: 30px;
+      margin-bottom: 27px;
+  }
+  .how-were-work a img, .who-were-are a img {
+      display: block;
+      margin: 20px auto auto auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .header ul {
+      font-size: 18px;
+  }
+  .header .text h1 {
+      font-size: 36px;
+  }
+  .header .text p {
+      font-size: 16px;
+  }
+  .about-us .title h1, .our-journey .title h1 {
+      font-size: 34px;
+  }
+  .about-us .title h2, .our-journey .title h2 {
+      font-size: 28px;
+  }
+  .about-us .title p {
+      font-size: 16px;
+  }
+  .about-us .title p br {
+      display: none;
+  }
+  .who-were-are h1, .how-were-work .left h1 {
+      font-size: 36px;
+  }
+  .who-were-are h2, .how-were-work .left h2 {
+      font-size: 20px;
+  }
+  .who-were-are p, .how-were-work .left p {
+      font-size: 16px;
+  }
+  .how-were-work .right p {
+      margin-top: 15px;
+      margin-bottom: 20px;
+  }
+  .our-service .title h1 {
+      font-size: 36px;
+  }
+  .footer .social {
+      justify-content: center;
+  }
 }
 
 .feature-work {
@@ -325,7 +618,7 @@ body {
 
 .contact-us .social-ic .fa-twitter,
 .fa-linkedin,
-.fa-instagram{
+.social-ic .fa-instagram{
   margin-left: 32px;
 }
 
