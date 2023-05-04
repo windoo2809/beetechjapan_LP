@@ -1,22 +1,77 @@
 body {
   font-weight: 400;
   font-size: 18px;
+  scroll-behavior: smooth;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.container {
+  max-width: 1300px;
 }
 
 .header {
-  position: absolute;
+  height: 0;
+  padding-bottom: 53%;
+  background: none no-repeat;
+  background-size: 100% auto;
+  background-image: url(/assets/images/beetech-logomockup.png);
+}
+
+.site-menu {
+  display: block;
   width: 100%;
-  top: 20px;
+}
+
+.site-menu.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  -webkit-animation: ctFadeInDown 600ms ease-in-out;
+  -moz-animation: ctFadeInDown 600ms ease-in-out;
+  -ms-animation: ctFadeInDown 600ms ease-in-out;
+  animation: ctFadeInDown 600ms ease-in-out;
+  background-color: white;
+  z-index: 9999;
+}
+
+@-webkit-keyframes ctFadeInDown {
+  from {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+  }
+}
+
+.site-menu.fixed img {
+  width: 170px;
+}
+
+.site-menu.fixed ul {
+  margin-top: 0;
+}
+
+.site-menu.fixed .list-inline-item a {
+  color: #000000 !important;
 }
 
 .header ul {
   font-size: 20px;
   margin-top: 2rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .header ul a {
-    color: white;
+  color: white;
 }
 
 .header .list-inline-item:not(:last-child) {
@@ -26,7 +81,7 @@ body {
 .header .text {
   position: relative;
   top: 12rem;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .header ul a {
@@ -37,41 +92,202 @@ body {
   font-size: 56px;
 }
 
-.banner img {
-  min-height: 600px;
-}
-
-.about-us, .our-journey {
+.about-us,
+.our-journey {
   padding-top: 80px;
   padding-bottom: 80px;
 }
 
-.about-us .title h2, .our-journey .title h2 {
-  font-family: 'Poppins', sans-serif;
+.about-us .title h2,
+.our-journey .title h2 {
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 32px;
-  color: #4D4D4D;
+  color: #4d4d4d;
 }
 
-.about-us .title h1, .our-journey .title h1 {
-  font-family: 'Montserrat', sans-serif;
+.about-us .title h1,
+.our-journey .title h1 {
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 48px;
-  color: #FF6E2E;
+  color: #ff6e2e;
   margin-top: 15px;
 }
 
 .about-us .title p {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Poppins", sans-serif;
+  margin: auto;
   margin-top: 20px;
+  max-width: 602px;
 }
 
-.about-us img {
-  margin-top: 60px;
+.our-journey .time-line {
+  position: relative;
+  width: 100%;
+  margin: 30px auto;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
-.our-journey .time-line{
-  margin-top: 1rem;
+.t-left .t-content {
+  position: absolute;
+  top: 25px;
+}
+
+.t-right .t-content {
+  position: absolute;
+  top: 25px;
+  right: 0;
+  justify-content: end;
+}
+
+.t-left {
+  left: 0;
+  position: relative;
+  width: 50%;
+}
+
+.t-left .background {
+  height: 100px;
+  background-color: #FFEDE5;
+  margin-right: -45px;
+}
+
+.t-right .background {
+  height: 100px;
+  background-color: #FFEDE5;
+  margin-left: -45px;
+}
+
+.t-right {
+  left: 50%;
+  position: relative;
+  width: 50%;
+}
+
+.time-line::after {
+  content: '';
+  position: absolute;
+  width: 7px;
+  background-color: #FF6E2E;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+}
+
+.time-line .t-circle::before {
+  content: "";
+  background: #FF6E2E;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 27px;
+  height: 27px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: 3px;
+  margin-top: -7px;
+  z-index: 1;
+}
+
+.time-line .t-circle::after {
+  content: "";
+  background: #FF6E2E;
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 27px;
+  height: 27px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin-left: 3px;
+  margin-bottom: -7px;
+  z-index: 1;
+}
+
+.time-line .t-left::before {
+  content: "";
+  background: #4D4D4D;
+  position: absolute;
+  top: 45px;
+  right: 0;
+  width: 44px;
+  height: 4px;
+}
+
+.time-line .t-left::after {
+  content: "";
+  background: #4D4D4D;
+  position: absolute;
+  top: 42px;
+  right: 30px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.time-line .t-right::before {
+  content: "";
+  background: #4D4D4D;
+  position: absolute;
+  top: 45px;
+  left: 0;
+  width: 44px;
+  height: 4px;
+}
+
+.time-line .t-right::after {
+  content: "";
+  background: #4D4D4D;
+  position: absolute;
+  top: 42px;
+  left: 45px;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+}
+
+.our-journey .time-left:first-child {
+  margin-top: 70px;
+}
+
+.our-journey .t-content p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  max-width: 460px;
+}
+
+.t-left .t-content p {
+  text-align: right;
+  margin-right: 30px;
+}
+
+.t-right .t-content p {
+  text-align: left;
+  margin-left: 30px;
+}
+
+.our-journey .t-content h4 {
+  font-weight: 600;
+  font-size: 32px;
+  font-family: "Poppins", sans-serif;
+  color: #FF6E2E;
+  max-width: 70px;
+  border-top: 7px solid #FF6E2E;
 }
 
 .who-were-are {
@@ -79,64 +295,88 @@ body {
   padding-bottom: 120px;
 }
 
-.who-were-are h1, .how-were-work .left h1 {
-  font-family: 'Montserrat', sans-serif;
+.who-were-are h3,
+.how-were-work .left h3 {
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 48px;
-  color: #FF6E2E;
+  color: #ff6e2e;
 }
 
-.who-were-are p, .how-were-work .left p {
-  font-family: 'Poppins', sans-serif;
+.who-were-are p,
+.how-were-work .left p {
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   line-height: 40px;
 }
 
-.who-were-are h2, .how-were-work .left h2 {
-  font-family: 'Poppins', sans-serif;
+.who-were-are h4,
+.how-were-work .left h4 {
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
   font-size: 28px;
-  color: #4D4D4D;
+  color: #4d4d4d;
   line-height: 40px;
 }
 
-.who-were-are .left, .how-were-work .left {
+.who-were-are .left,
+.how-were-work .left {
   display: flex;
   flex-wrap: wrap;
   align-content: center;
   height: 100%;
 }
 
+.who-were-are .button {
+  display: block;
+  margin-top: -145px;
+}
+
+.how-were-work .button {
+  display: block;
+  margin-top: -65px;
+}
+
+.who-were-are .button span,
+.how-were-work .button span {
+  font-size: 20px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  left: 22px;
+  top: 14px;
+}
+
 .how-were-work {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   padding-top: 120px;
   padding-bottom: 120px;
 }
 
+.how-were-work::before {
+  content:url('/assets/images/vector.png');
+  position: relative;
+  left: 47%;
+  top: 15rem;
+}
+
 .how-were-work .right h3 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 20px;
   font-weight: 600;
 }
 
 .how-were-work .right p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 500;
-  margin-top: 1.45rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .how-were-work .right img {
   margin-left: 30px;
-}
-
-.how-were-work .vector {
-  position: absolute;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
-  margin: auto;
 }
 
 .our-service {
@@ -145,14 +385,15 @@ body {
 }
 
 .our-service .title h1 {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-weight: 700;
   font-size: 48px;
-  color: #FF6E2E;
+  color: #ff6e2e;
 }
 
 .our-service .title p {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
 }
 
 .our-service .card-group {
@@ -160,24 +401,24 @@ body {
 }
 
 .our-service .card-title {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
-  font-size: 28px;
-  color: #FF6E2E;
+  font-size: 32px;
+  color: #ff6e2e;
 }
 
 .our-service .card-text {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 16px;
 }
 
 footer {
-  background-color: #07090D;
+  background-color: #07090d;
   padding-top: 40px;
   padding-bottom: 40px;
-  font-family: 'Poppins', sans-serif;
-  color: #818A9C;
+  font-family: "Poppins", sans-serif;
+  color: #818a9c;
 }
 
 footer ul {
@@ -190,7 +431,7 @@ footer ul label {
 }
 
 footer hr {
-  border-top: 2px solid #1B212C;
+  border-top: 2px solid #1b212c;
   margin-bottom: 40px;
 }
 
@@ -207,126 +448,219 @@ footer .social a {
   align-items: center;
   justify-content: center;
   color: white;
-  border: 1px solid #1B212C;
+  border: 1px solid #1b212c;
   font-size: 20px;
   margin-left: 20px;
+  text-decoration: none;
 }
 
 @media screen and (max-width: 1200px) {
-  .header .text {
-      top: 5rem;
+  .header {
+    min-height: 500px;
+    background-position: center;
+    background-size: cover;
   }
-  .who-were-are br, .how-were-work br {
-      display: none;
+
+  .header .text {
+    top: 2rem;
+  }
+  .who-were-are br,
+  .how-were-work br {
+    display: none;
   }
   .how-were-work .right img {
-      margin-left: 0;
+    margin-left: 0;
   }
 
   .our-service .card-title {
-      font-size: 24px;
+    font-size: 24px;
+  }
+  .how-were-work .right p {
+    margin-top: 0;
+  }
+  .our-journey .t-content p {
+    font-size: 14px;
+  }
+  .our-journey .t-content h4 {
+    font-size: 28px;
+  }
+  .t-left, .t-right {
+    width: 100%;
+  }
+  .t-right {
+    left: 0%;
+  }
+  .time-line::after {
+    left: 0%;
+  }
+  .time-line .t-circle::before {
+    left: 0%;
+  }
+  .time-line .t-circle::after {
+    left: 0%;
+  }
+  .t-right .background, .t-left .background {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .t-right .t-content {
+    right: unset;
+  }
+  .time-line .t-left::before {
+    right: unset;
+  }
+  .time-line .t-left::after {
+    right: unset;
+    left: 47px;
+  }
+  .t-left .t-content {
+    flex-direction: row-reverse;
+  }
+  .t-left .t-content p {
+    text-align: left;
+  }
+  .t-left .t-content p {
+    margin-right: 0;
+    margin-left: 30px;
+  }
+  .t-content {
+    left: 70px;
+  }
+  .our-journey .time-line {
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
 @media screen and (max-width: 992px) {
-  .about-us, .our-journey {
-      padding-top: 40px;
-      padding-bottom: 40px;
+  .about-us,
+  .our-journey {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
-  .who-were-are, .how-were-work, .our-service {
-      padding-top: 40px;
-      padding-bottom: 40px;
+  .who-were-are,
+  .how-were-work,
+  .our-service {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
 @media screen and (max-width: 768px) {
   .header .list-inline-item {
-      font-size: 18px;
+    font-size: 18px;
   }
   .header .list-inline-item:not(:last-child) {
-      margin-right: 0.5rem;
+    margin-right: 0.5rem;
   }
   .header .text h1 {
-      font-size: 46px;
+    font-size: 46px;
   }
   .header .text br {
-      display: none;
+    display: none;
   }
   .how-were-work .right p {
-      font-size: 14px;
-      margin-top: 0;
+    font-size: 14px;
+    margin-top: 0;
   }
   .how-were-work .right h3 {
-      font-size: 18px;
+    font-size: 18px;
   }
-  .who-were-are h1, .how-were-work .left h1 {
-      font-size: 42px;
+  .who-were-are h3,
+  .how-were-work .left h3 {
+    font-size: 42px;
   }
-  .who-were-are h2, .how-were-work .left h2 {
-      font-size: 22px;
+  .who-were-are h4,
+  .how-were-work .left h4 {
+    font-size: 22px;
   }
-  .who-were-are p, .how-were-work .left p {
-      font-size: 18px;
+  .who-were-are p,
+  .how-were-work .left p {
+    font-size: 18px;
   }
 }
 
 @media (max-width: 576px) {
   .container {
-      max-width: 960px;
+    max-width: 960px;
   }
   .how-were-work .right img {
-      height: 400px;
+    height: 400px;
   }
   .how-were-work .right p {
-      margin-top: 30px;
-      margin-bottom: 27px;
+    margin-top: 30px;
+    margin-bottom: 27px;
   }
-  .how-were-work a img, .who-were-are a img {
-      display: block;
-      margin: 20px auto auto auto;
+  .who-were-are .button, .how-were-work .button {
+    margin-top: 20px;
+  }
+  .how-were-work::before {
+    top: 20rem;
+  }
+  .our-journey .t-content h4 {
+    font-size: 26px;
+    border-top: 5px solid #FF6E2E;
+  }
+  .t-content {
+    left: 50px;
+  }
+  .time-line .t-left::before, .time-line .t-right::before {
+    width: 30px;
+  }
+  .time-line .t-left::after, .time-line .t-right::after {
+    left: 33px;
   }
 }
 
 @media (max-width: 480px) {
   .header ul {
-      font-size: 18px;
+    font-size: 18px;
   }
   .header .text h1 {
-      font-size: 36px;
+    font-size: 36px;
   }
   .header .text p {
-      font-size: 16px;
+    font-size: 16px;
   }
-  .about-us .title h1, .our-journey .title h1 {
-      font-size: 34px;
+  .about-us .title h1,
+  .our-journey .title h1 {
+    font-size: 34px;
   }
-  .about-us .title h2, .our-journey .title h2 {
-      font-size: 28px;
+  .about-us .title h2,
+  .our-journey .title h2 {
+    font-size: 28px;
   }
   .about-us .title p {
-      font-size: 16px;
+    font-size: 16px;
   }
   .about-us .title p br {
-      display: none;
+    display: none;
   }
-  .who-were-are h1, .how-were-work .left h1 {
-      font-size: 36px;
+  .who-were-are h3,
+  .how-were-work .left h3 {
+    font-size: 36px;
   }
-  .who-were-are h2, .how-were-work .left h2 {
-      font-size: 20px;
+  .who-were-are h4,
+  .how-were-work .left h4 {
+    font-size: 20px;
   }
-  .who-were-are p, .how-were-work .left p {
-      font-size: 16px;
+  .who-were-are p,
+  .how-were-work .left p {
+    font-size: 16px;
   }
   .how-were-work .right p {
-      margin-top: 15px;
-      margin-bottom: 20px;
+    margin-top: 15px;
+    margin-bottom: 20px;
   }
   .our-service .title h1 {
-      font-size: 36px;
+    font-size: 36px;
   }
   .footer .social {
-      justify-content: center;
+    justify-content: center;
+  }
+  .t-left .t-content p, .t-right .t-content p {
+    font-size: 12px;
+    margin-left: 15px;
   }
 }
 
@@ -335,7 +669,6 @@ footer .social a {
   padding-top: 80px;
   padding-bottom: 80px;
 }
-
 .feature-work .owl-carousel {
   margin-top: 53px;
 }
@@ -394,7 +727,6 @@ footer .social a {
   border: none;
   opacity: 1;
 }
-
 .feature-work .owl-carousel .owl-nav button.owl-next {
   background: none;
   border: none;
@@ -451,14 +783,6 @@ footer .social a {
   padding-bottom: 80px;
 }
 
-.our-team .title {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 16px;
-}
-
 .our-team .title p {
   font-family: "Montserrat";
   font-style: normal;
@@ -472,20 +796,24 @@ footer .social a {
   margin-top: 60px;
 }
 
+.our-team .owl-carousel .owl-stage p {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin-top: 16px;
+  color: #4d4d4d;
+}
 .our-team .owl-carousel .owl-stage .owl-item .card {
   border: none;
 }
-
-.our-team .owl-carousel .owl-stage .owl-item .card img {
-  height: 365px;
-}
-
 .our-team .owl-carousel .owl-stage .owl-item .card .card-footer {
   border: none;
   background: none;
 }
 
-.our-team .owl-carousel .owl-stage .owl-item .card .card-body .card-title {
+.our-team .owl-carousel .owl-stage .owl-item .card .card-body h5 {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
@@ -523,7 +851,6 @@ footer .social a {
   margin-top: 50px;
   justify-content: flex-end;
 }
-
 .our-team .owl-carousel .owl-dots {
   position: absolute;
   top: 96%;
@@ -546,6 +873,9 @@ footer .social a {
 }
 .our-location .row{
   justify-content: space-between;
+}
+.our-location .first{
+  margin-top: 80px;
 }
 
 .our-location .row .img{
@@ -668,12 +998,11 @@ footer .social a {
   border: 1px solid #ff6e2e;
   border-radius: 15px;
 }
-
-@media (min-width: 1200px) {
-  .container {
-    max-width: 1292px;
-  }
+.contact-us form button:hover {
+  background: #ff6e2e;
+  border: 1px solid #ff6e2e;
 }
+
 
 @media screen and (max-width: 1200px) {
   .founder .row .right h1 {
@@ -689,8 +1018,8 @@ footer .social a {
     height: 295px;
   }
   .our-location .row img {
-    max-width: 10%;
-}
+    max-width: 8.5%;
+  }
 }
 
 @media screen and (max-width: 992px) {
@@ -749,7 +1078,7 @@ footer .social a {
     font-size: 17px;
   }
   .our-location .row img {
-    max-width: 12.5%;
+    max-width: 9.5%;
   }
   .contact-us {
     padding-top: 60px;
@@ -800,7 +1129,7 @@ footer .social a {
     font-size: 17px;
   }
   .our-location .row img {
-    max-width: 18%;
+    max-width: 13%;
   }
   .our-location .row .img {
     max-width: 100%;
@@ -821,6 +1150,12 @@ footer .social a {
   .our-team .owl-carousel .owl-stage .owl-item .card img {
     height: 554px;
   }
+  .our-location .row .right-content, .left-content {
+    max-width: 100%;
+  }
+  .our-location .row img {
+    max-width: 7%;
+  }
   .contact-us form {
     max-width: 100%;
   }
@@ -834,6 +1169,6 @@ footer .social a {
     height: 350px;
   }
   .our-location .row img {
-    max-width: 19%;
+    max-width: 10%;
   }
 }
