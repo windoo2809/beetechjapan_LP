@@ -43,3 +43,14 @@ $("#our-team").owlCarousel({
     },
   },
 });
+
+$(document).on('mousemove', function(e) {
+  let distant = $(".site-menu").innerHeight();
+  if ($(window).scrollTop() > distant) {
+      if ((e.pageY - $(window).scrollTop()) <= distant || $(".site-menu:hover").length != 0) {
+          $(".site-menu").addClass("fixed");
+      } else {
+          $(".site-menu").removeClass("fixed");
+      }
+  }
+});
