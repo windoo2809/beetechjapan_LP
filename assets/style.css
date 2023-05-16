@@ -638,10 +638,13 @@ footer .row .content p {
   .who-were-are h3,
   .how-were-work .left h3,
   .about-us .title h1,
-  .our-journey .title h1 {
-    font-size: 42px;
+  .our-journey .title h1,
+  .our-service .title h1 {
+    font-size: 36px;
   }
 
+  .about-us .title h2,
+  .our-journey .title h2,
   .who-were-are h4,
   .how-were-work .left h4 {
     font-size: 22px;
@@ -658,8 +661,8 @@ footer .row .content p {
     max-width: 960px;
   }
 
-  .how-were-work .right img {
-    height: 400px;
+  .header .text h1 {
+    font-size: 36px;
   }
 
   .who-were-are .row .w-100,
@@ -1324,9 +1327,6 @@ footer .row .content p {
 }
 
 @media (max-width: 576px) {
-  .title h2 {
-    font-size: 36px;
-  }
 
   .about-us,
   .our-journey,
@@ -1349,6 +1349,11 @@ footer .row .content p {
 
   .our-team .owl-carousel .owl-stage .owl-item .card .card-body {
     grid-template-rows: 50px 80px 160px;
+  }
+  
+  .how-were-work::before {
+    top: 31rem;
+    left: 35%;
   }
 
   .founder .row .right {
@@ -1413,6 +1418,18 @@ footer .row .content p {
 }
 
 @media (max-width: 480px) {
+
+  .header .text h1{
+    font-size: 26px;
+  }
+  .who-were-are h3,
+  .how-were-work .left h3,
+  .about-us .title h1,
+  .our-journey .title h1,
+  .our-service .title h1,
+  .title h2 {
+    font-size: 30px;
+  }
 
   .t-left .t-content p,
   .t-right .t-content p {
@@ -1482,7 +1499,16 @@ footer .row .content p {
     padding-top: 20px;
     padding-bottom: 20px;
   }
-  
+
+  .who-were-are h3,
+  .how-were-work .left h3,
+  .about-us .title h1,
+  .our-journey .title h1,
+  .our-service .title h1,
+  .title h2 {
+    font-size: 24px;
+  }
+
   .header ul {
     font-size: 16px;
   }
@@ -1501,12 +1527,6 @@ footer .row .content p {
   .our-journey .title h2 {
     font-size: 20px;
     line-height: 20px;
-  }
-
-  .about-us .title h1,
-  .our-journey .title h1 {
-    font-size: 24px;
-    line-height: 24px;
   }
 
   .about-us .title p {
@@ -1561,11 +1581,6 @@ footer .row .content p {
     margin-bottom: 20px;
   }
 
-  .who-were-are h3,
-  .how-were-work .left h3 {
-    font-size: 24px;
-  }
-
   .who-were-are p,
   .how-were-work .left p {
     margin-bottom: 0 !important;
@@ -1583,21 +1598,12 @@ footer .row .content p {
     display: block;
   }
 
-  .how-were-work::before {
-    top: 30rem;
-    left: 35%;
-  }
-
   .how-were-work .right h3 {
     font-size: 18px;
   }
 
   .how-were-work .right p {
     font-size: 14px;
-  }
-
-  .how-were-work .right img {
-    height: 465px;
   }
 
   .how-were-work .right h3 {
@@ -1627,10 +1633,6 @@ footer .row .content p {
 
   .our-service .card-text {
     font-size: 12px;
-  }
-
-  .title h2 {
-    font-size: 24px;
   }
 
   .feature-work {
