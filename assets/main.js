@@ -1,6 +1,5 @@
 $("#feature-work").owlCarousel({
-  margin: 10,
-  items: 4,
+  margin: 15,
   nav: true,
   navText: [
     "<img src='assets/images/arrow-left.png'>",
@@ -11,16 +10,13 @@ $("#feature-work").owlCarousel({
   lazyLoad: true,
   responsive: {
     0: {
-      items: 1,
+      items: 2.5,
     },
     600: {
-      items: 3,
+      items: 2.5,
     },
     1000: {
-      items: 3,
-    },
-    1900: {
-      items: 3,
+      items: 3.5,
     },
   },
 });
@@ -28,7 +24,6 @@ $("#feature-work").owlCarousel({
 $("#our-team").owlCarousel({
   margin: 30,
   dots: true,
-  items: 4,
   nav: true,
   navText: [
     "<img src='/assets/images/btn-left.png'>",
@@ -38,27 +33,32 @@ $("#our-team").owlCarousel({
   lazyLoad: true,
   responsive: {
     0: {
-      items: 1,
+      items: 1.5,
     },
     600: {
-      items: 3,
+      items: 2.5,
     },
     1000: {
-      items: 3,
-    },
-    1900: {
-      items: 3,
+      items: 3.5,
     },
   },
 });
 
-$(document).on('mousemove', function(e) {
+$(document).on("mousemove", function (e) {
   let distant = $(".site-menu").innerHeight();
   if ($(window).scrollTop() > distant) {
-      if ((e.pageY - $(window).scrollTop()) <= distant || $(".site-menu:hover").length != 0) {
-          $(".site-menu").addClass("fixed");
-      } else {
-          $(".site-menu").removeClass("fixed");
-      }
+    if (
+      e.pageY - $(window).scrollTop() <= distant ||
+      $(".site-menu:hover").length != 0
+    ) {
+      $(".site-menu").addClass("fixed");
+    } else {
+      $(".site-menu").removeClass("fixed");
+    }
   }
+});
+
+$(".hamburger").click(function (e) {
+  $(".site-menu > ul").toggleClass("active");
+  $(".hamburger").toggleClass("active");
 });
