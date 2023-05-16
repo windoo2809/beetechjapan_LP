@@ -1117,7 +1117,7 @@ footer .row .content p {
   }
 
   .header ul a {
-    font-size: 16px;
+    font-weight: 500;
     color: #FF6E2E;
   }
 
@@ -1481,6 +1481,10 @@ footer .row .content p {
   .contact-us {
     padding-top: 20px;
     padding-bottom: 20px;
+  }
+  
+  .header ul {
+    font-size: 16px;
   }
 
   .header .text h1 {
