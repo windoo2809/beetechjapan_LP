@@ -80,9 +80,9 @@ html {
 
 .site-menu .hamburger .bar {
   display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px;
+  width: 24px;
+  height: 5px;
+  margin: 3px;
   -webkit-transition: all 0.3s ease-in-out;
   border-radius: 4px;
   background-color: #FF6E2E;
@@ -144,7 +144,7 @@ html {
 .our-journey .time-line {
   position: relative;
   width: 100%;
-  margin: 30px auto;
+  margin-top: 30px;
   padding-top: 40px;
   padding-bottom: 40px;
 }
@@ -372,7 +372,7 @@ html {
 
 .who-were-are .button span,
 .how-were-work .button span {
-  font-size: 20px;
+  font-size: 14px;
   font-family: "Poppins", sans-serif;
   font-weight: 600;
   color: white;
@@ -420,7 +420,7 @@ html {
 }
 
 .our-service .title h1 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 700;
   font-size: 48px;
   color: #ff6e2e;
@@ -481,6 +481,7 @@ footer .row .content {
 }
 
 footer .row .content h4 {
+  font-family: "Poppins";
   font-size: 24px;
   font-weight: 400;
   line-height: 27px;
@@ -502,7 +503,7 @@ footer .row .content p {
   }
 
   .header .text {
-    top: 2rem;
+    top: 50px;
   }
 
   .who-were-are br,
@@ -672,6 +673,7 @@ footer .row .content p {
 
   .who-were-are .left,
   .how-were-work .left {
+    padding: 0 5px;
     width: 100%;
   }
 
@@ -711,7 +713,7 @@ footer .row .content p {
 }
 
 .title h2 {
-  font-family: "Montserrat";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   line-height: 54px;
@@ -800,7 +802,7 @@ footer .row .content p {
 }
 
 .founder .row .right h1 {
-  font-family: "Montserrat";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 700;
   font-size: 48px;
@@ -828,7 +830,7 @@ footer .row .content p {
 }
 
 .our-team .title p {
-  font-family: "Montserrat";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -841,7 +843,7 @@ footer .row .content p {
 }
 
 .our-team .owl-carousel .owl-stage p {
-  font-family: "Montserrat";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -884,7 +886,7 @@ footer .row .content p {
 }
 
 .our-team .owl-carousel .owl-stage .owl-item .card .card-body p {
-  font-family: "Montserrat";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -950,7 +952,7 @@ footer .row .content p {
 }
 
 .our-location .title p {
-  font-family: "Montserrat";
+  font-family: "Poppins";
   font-style: normal;
   font-weight: 500;
   font-size: 18px;
@@ -969,7 +971,7 @@ footer .row .content p {
 }
 
 .our-location .row p {
-  font-family: "Montserrat";
+  font-family: "Poppins";
   margin: 0;
   font-style: normal;
   font-weight: 400;
@@ -978,8 +980,8 @@ footer .row .content p {
   color: #4d4d4d;
 }
 
-.our-location .row p span {
-  font-family: "Montserrat";
+.our-location .row h3 {
+  font-family: "Poppins";
   font-weight: 700;
   font-size: 32px;
   line-height: 32px;
@@ -1132,10 +1134,9 @@ footer .row .content p {
   .site-menu {
     position: relative;
     display: flex;
-    padding-top: 16px;
+    padding-top: 25px;
     padding-left: 15px;
     padding-right: 15px;
-    align-items: center;
     justify-content: space-between;
   }
 
@@ -1167,6 +1168,7 @@ footer .row .content p {
   .site-menu .hamburger {
     display: block;
     z-index: 101;
+    height: 100%;
   }
 
   .site-menu .hamburger.active .bar:nth-child(1) {
@@ -1245,7 +1247,7 @@ footer .row .content p {
     font-size: 14px;
   }
 
-  .our-location .row p span {
+  .our-location .row h3 {
     font-size: 20px;
   }
 
@@ -1350,7 +1352,7 @@ footer .row .content p {
   .our-team .owl-carousel .owl-stage .owl-item .card .card-body {
     grid-template-rows: 50px 80px 160px;
   }
-  
+
   .how-were-work::before {
     top: 31rem;
     left: 35%;
@@ -1419,9 +1421,10 @@ footer .row .content p {
 
 @media (max-width: 480px) {
 
-  .header .text h1{
+  .header .text h1 {
     font-size: 26px;
   }
+
   .who-were-are h3,
   .how-were-work .left h3,
   .about-us .title h1,
@@ -1485,52 +1488,107 @@ footer .row .content p {
 }
 
 @media (max-width: 375px) {
+  .site-menu {
+    padding-top: 24px;
+  }
+  .about-us {
+    padding-top: 82px;
+    padding-bottom: 0;
+  }
 
-  .about-us,
-  .our-journey,
-  .who-were-are,
-  .how-were-work,
-  .our-service,
-  .feature-work,
-  .founder,
-  .our-team,
-  .our-location,
-  .contact-us {
-    padding-top: 20px;
-    padding-bottom: 20px;
+  .about-us .title h1 {
+    margin-top: 10px;
+  }
+
+  .about-us .title p {
+    margin-top: 0;
+    font-size: 16px;
+    padding: 0 4px;
+    line-height: 19px;
+  }
+
+  .our-journey {
+    padding-top: 37px;
+    padding-bottom: 0;
+  }
+
+  .our-journey .title h1 {
+    margin-top: 4px;
+    font-size: 24px;
+  }
+
+  .who-were-are {
+    padding-top: 26px;
+    padding-bottom: 35px;
+  }
+
+  .who-were-are h3 {
+    margin-top: 0;
+  }
+
+  .who-were-are h4 {
+    padding-top: 4px;
+  }
+
+  .who-were-are .button,
+  .how-were-work .button {
+    top: 7px;
+  }
+
+  .how-were-work {
+    padding-top: 0;
+    padding-bottom: 24px;
+  }
+
+  .how-were-work .row {
+    margin-top: -39px;
+  }
+
+  .how-were-work .left h3 {
+    margin-top: 3px;
+  }
+
+  .how-were-work .row .right {
+    margin-top: 19px;
   }
 
   .who-were-are h3,
   .how-were-work .left h3,
   .about-us .title h1,
-  .our-journey .title h1,
   .our-service .title h1,
   .title h2 {
     font-size: 24px;
+    line-height: 36px;
   }
 
-  .header ul {
+  .header ul a{
     font-size: 16px;
   }
 
   .header .text h1 {
+    padding: 0 5px;
     font-size: 20px;
     line-height: 24px;
   }
 
   .header .text p {
+    margin-top: 1.5rem !important;
+    padding: 0 15px;
     font-size: 14px;
     line-height: 17px;
   }
 
   .about-us .title h2,
   .our-journey .title h2 {
+    margin-top: 0;
+    margin-bottom: 0;
     font-size: 20px;
-    line-height: 20px;
+    line-height: 33px;
   }
 
-  .about-us .title p {
-    font-size: 16px;
+  .about-us img {
+    margin-top: 21px !important;
+    padding: 0 5px;
   }
 
   .about-us .title p br {
@@ -1538,17 +1596,55 @@ footer .row .content p {
   }
 
   .our-journey .t-content h4 {
-    padding-top: 4px;
+    width: 20px;
+    margin-bottom: 0;
+    padding-top: 6px;
     font-size: 14px;
+    border-top: 3px solid #FF6E2E;
+  }
+
+  .our-journey .time-line {
+    left: 53%;
+    padding-bottom: 0;
+  }
+
+  .t-left,
+  .t-right {
+    top: -38px;
+    width: 100%;
+    left: -10px;
+  }
+
+  .t-left .t-content,
+  .t-right .t-content {
+    top: 6px;
+    left: 30px;
   }
 
   .t-left .t-content p,
   .t-right .t-content p {
+    padding: 2px 0px;
     font-size: 10px;
+    line-height: 15px;
   }
 
   .time-line::after {
     width: 5px;
+    height: 460px;
+  }
+
+  .time-line .t-left .background,
+  .time-line .t-right .background {
+    height: 70px;
+  }
+
+  .time-line .t-left .span,
+  .time-line .t-right .span {
+    height: 85px;
+  }
+
+  .time-line .t-circle::after {
+    top: 93%
   }
 
   .time-line .t-circle::before,
@@ -1559,14 +1655,16 @@ footer .row .content p {
 
   .time-line .t-left::before,
   .time-line .t-right::before {
-    width: 24px;
+    top: 18px;
+    width: 6px;
     height: 2px;
+    left: 15px;
   }
 
   .time-line .t-left::after,
   .time-line .t-right::after {
-    top: 22px;
-    left: 24px;
+    top: 17px;
+    left: 23px;
     width: 4px;
     height: 4px;
   }
@@ -1576,46 +1674,125 @@ footer .row .content p {
     margin-top: 12px;
   }
 
-  .who-were-are .button,
-  .how-were-work .button {
-    margin-bottom: 20px;
+  .who-were-are .row .w-100 {
+    margin-top: 26px;
+  }
+
+  .who-were-are .button img,
+  .how-were-work .button img {
+    width: 190px;
+    height: 46px;
+  }
+
+  .who-were-are .button a {
+    justify-content: normal;
+  }
+
+  .how-were-work .button a {
+    justify-content: center;
+  }
+
+  .how-were-work .right img {
+    margin-left: 5px;
+    height: 99%;
+  }
+
+  .how-were-work .right .col {
+    padding-left: 45px;
+    justify-content: normal;
+  }
+
+  .who-were-are .button a img,
+  .how-were-work .button a img {
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+  }
+
+  .who-were-are .button span {
+    margin-left: 12px;
+  }
+  .how-were-work .left h3 {
+    margin-top: -4px;
+    margin-bottom: 8px;
+  }
+  .how-were-work .left h4 {
+    margin-bottom: 0 !important;
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .how-were-work .left p {
+    margin-top: 5px;
   }
 
   .who-were-are p,
-  .how-were-work .left p {
+  .how-were-work .left p,
+  .who-were-are h4 {
     margin-bottom: 0 !important;
+    line-height: 24px;
     font-size: 16px;
   }
 
-  .who-were-are h4,
-  .how-were-work .left h4 {
-    margin-bottom: 0 !important;
-    font-size: 16px;
-  }
-
-  .who-were-are br,
-  .how-were-work br {
+  .who-were-are br {
     display: block;
-  }
-
-  .how-were-work .right h3 {
-    font-size: 18px;
   }
 
   .how-were-work .right p {
     font-size: 14px;
+    margin-bottom: 0;
   }
 
   .how-were-work .right h3 {
     margin-bottom: 0;
+    font-size: 18px;
+    line-height: 27px;
   }
 
-  .how-were-work .right p {
-    margin-top: 10px;
+  .how-were-work .right .mt-2 {
+    margin-top: 23px !important;
+  }
+
+  .how-were-work .right .span {
+    margin-top: 17px !important;
+  }
+
+  .how-were-work::before {
+    top: 22rem;
+    left: 41%;
+  }
+
+  .our-service {
+    padding-top: 35px;
+    padding-bottom: 28px;
+  }
+
+  .our-service .w-100 {
+    height: 228px;
+    object-fit: cover;
+  }
+
+  .our-service .span {
+    height: 205px;
+    object-fit: cover;
+  }
+
+
+  .our-service .card-body {
+    padding-top: 10px;
+  }
+
+  .our-service .card-subtitle {
+    margin-bottom: 9px;
+  }
+
+  .our-service .card {
     margin-bottom: 0;
   }
 
   .our-service .title h1 {
+    margin-top: 7px;
+    margin-bottom: 7px;
     font-size: 24px;
   }
 
@@ -1634,54 +1811,142 @@ footer .row .content p {
   .our-service .card-text {
     font-size: 12px;
   }
+  .our-service .card-text img {
+    width: 7px;
+    height: 13px;
+    margin-left: 15px;
+  }
 
   .feature-work {
-    padding-top: 20px;
+    padding-top: 0px;
+  }
+
+  .feature-work .owl-carousel .owl-item img {
+    width: 150px;
   }
 
   .feature-work .owl-carousel .owl-stage-outer .owl-stage .owl-item {
     height: 225px;
   }
 
+  .feature-work .owl-carousel .owl-nav .owl-prev img,
+  .feature-work .owl-carousel .owl-nav .owl-next img {
+    width: 24px;
+    height: 24px;
+  }
+  
   .feature-work .owl-carousel {
-    margin-top: 0;
+    margin-top: 12px;
   }
 
   .feature-work .owl-carousel .owl-stage-outer .owl-stage .owl-item p {
-    padding: 10px;
+    padding-bottom: 12px;
+    padding-left: 11px;
     font-size: 14px;
+    line-height: 21px;
+  }
+
+  .founder {
+    padding-top: 0;
+    padding-bottom: 25px;
+  }
+
+  .founder .w-50 {
+    height: 265px;
+    padding-top: 22px;
+    padding-left: 47px;
+    padding-right: 47px;
   }
 
   .founder .row .right h4 {
+    margin-top: 4px;
     font-size: 16px;
+    line-height: 24px;
   }
 
   .founder .row .right h1 {
+    margin-bottom: 0;
     font-size: 24px;
+    line-height: 36px;
   }
 
   .founder .row .right p {
+    margin-bottom: 12px;
     font-size: 16px;
+    line-height: 24px;
+  }
+
+  .our-team {
+    padding: 0;
+  }
+
+  .our-team .title h2 {
+    margin-top: 16px;
+    margin-bottom: 0;
+    line-height: 36px;
   }
 
   .our-team .title p {
+    margin-top: 3px;
     font-size: 16px;
+    line-height: 24px;
+  }
+
+  .our-team .owl-carousel {
+    margin-top: 0;
+  }
+
+  .our-team .owl-carousel .owl-stage .owl-item .card {
+    width: 166px;
+  }
+
+  .our-team .owl-carousel .owl-item img {
+    margin-top: 9px;
+    width: 150px;
+    height: 150px;
+  }
+
+  .our-team .owl-carousel .owl-stage .owl-item .card .card-body {
+    padding-top: 0;
   }
 
   .our-team .owl-carousel .owl-stage .owl-item .card .card-body h5 {
+    margin-top: 10px;
+    margin-bottom: 0;
     font-size: 16px;
+    line-height: 24px;
   }
 
   .our-team .owl-carousel .owl-stage .owl-item .card .card-body .card-text {
+    margin-top: 8px;
     font-size: 14px;
+    line-height: 21px;
   }
 
   .our-team .owl-carousel .owl-stage .owl-item .card .card-body p {
+    margin-top: 7px;
+    margin-bottom: 0;
     font-size: 12px;
+    line-height: 18px;
+  }
+
+  .our-team .owl-carousel .owl-stage .owl-item .card .card-footer i {
+    margin-top: 14px;
+  }
+
+  .our-team .owl-carousel .owl-dots {
+    top: 95%;
+    left: 4px;
   }
 
   .our-team .owl-carousel .owl-nav {
-    margin-top: 20px;
+    margin-top: 0;
+  }
+
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel button.owl-dot {
+    margin: 0 5px;
   }
 
   .our-team .owl-carousel .owl-nav img {
@@ -1694,57 +1959,160 @@ footer .row .content p {
     height: 8px;
   }
 
+  .our-location {
+    padding-top: 38px;
+    padding-bottom: 0;
+  }
+
+  .our-location .title h2 {
+    margin-bottom: 0;
+  }
+
+  .our-location .title p {
+    margin-top: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 0;
+  }
+
+  .our-location .row .img {
+    height: 200px;
+  }
+
+  .our-location .second .img {
+    margin-top: 15px;
+  }
+
+  .our-location .row img {
+    height: 80%;
+  }
+
   .our-location .first {
     margin-top: 24px;
   }
 
-  .our-location .row p span {
+  .our-location .first h3 {
+    margin-top: 8px;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  .our-location .second h3 {
+    margin-top: 6px;
+    margin-bottom: 0;
+    font-size: 16px;
+  }
+
+  .our-location .first p {
+    margin-top: -11px;
     font-size: 14px;
   }
 
-  .our-location .row p {
+  .our-location .second p {
+    margin-top: -11px;
     font-size: 14px;
   }
+
+  .our-location .first .right-content,
+  .our-location .second .left-content {
+    height: 130px;
+  }
+
 
   .our-location .second .left-content .col,
   .our-location .first .right-content .col {
-    padding-left: 10px;
+    height: 100%;
+    padding-left: 7px;
+  }
+
+  .contact-us {
+    padding-top: 40px;
+    padding-bottom: 43px;
+  }
+
+  .contact-us .title h2 {
+    margin-bottom: 0;
+  }
+
+  .contact-us .row .title img {
+    width: 19%;
   }
 
   .contact-us .left p {
     font-size: 14px;
   }
 
+  .contact-us .row .left-content .content {
+    margin-top: 27px;
+  }
+
+  .contact-us .content p {
+    margin-bottom: 0;
+    padding-bottom: 16px;
+    padding-left: 1px;
+    padding-right: 3px;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
   .contact-us .social-ic i {
     font-size: 14px;
+  }
+
+  .contact-us .social-ic {
+    margin-top: -14px;
+    padding: 4px;
   }
 
   .contact-us .social-ic .fa-twitter,
   .fa-linkedin,
   .social-ic .fa-instagram {
-    margin-left: 18px;
+    margin-left: 12px;
+  }
+  .contact-us form {
+    margin-top: 34px;
   }
 
   .contact-us form h2 {
     font-size: 16px;
+    line-height: 24px;
   }
 
   .contact-us form .form-group .form-control {
-    height: 46px;
+    height: 44px;
   }
 
   .contact-us form button {
-    margin-top: 15px;
+    margin-top: 0;
     height: 46px;
   }
 
+  .contact-us .form-control {
+    padding: 0.375rem 1.5rem;
+  }
+  
+  footer .row {
+
+  }
+
   footer .row .content {
-    margin-left: 12px;
+    max-width: 63%;
+    margin-left: 15px;
     padding-left: 12px;
-    padding-right: 0;
   }
 
   footer .row img {
     max-width: 27%;
+    padding-left: 5px;
+  }
+
+  footer .row .content h4 {
+    margin-bottom: 0;
+    line-height: 18px;
+  }
+
+  footer .row .content p {
+    margin-top: 4px;
+    line-height: 15px;
   }
 }

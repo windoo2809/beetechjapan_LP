@@ -11,12 +11,16 @@ $("#feature-work").owlCarousel({
   responsive: {
     0: {
       items: 2.5,
+      margin: 65,
+    },
+    376: {
+      items: 2.5,
     },
     600: {
       items: 2.5,
     },
     1000: {
-      items: 3.5,
+      items: 3,
     },
   },
 });
@@ -33,7 +37,7 @@ $("#our-team").owlCarousel({
   lazyLoad: true,
   responsive: {
     0: {
-      items: 1.5,
+      items: 2.1,
     },
     600: {
       items: 2.5,
